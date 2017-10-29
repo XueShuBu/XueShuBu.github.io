@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <style>
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #09f
+        }
+
+
+        html, body, #div1 {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            }
+
+        .title {
+            background: rgba(10, 197, 230, 0.164);
+            position: relative;
+            height: 80px;
+            margin: 0;
+            width: 100%;
+        }
+
+        .line {
+            margin-top: 24px;
+            position: absolute;
+            left: 130px;
+            border-right: 2px rgba(128, 128, 128, 0.452) dashed;
+            height: 35px;
+        }
+
+        .title-picture {
+            margin-left: 30px;
+
+            position: absolute;
+            height: 80px;
+
+        }
+
+        .title-word {
+            margin: 0;
+            position: absolute;
+            left: 150px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .menu {
+
+            background: white;
+            margin: 0;
+            padding: 0;
+
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .menu li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .menu button {
+            border: 0;
+            background: white;
+        }
+
+        .background {
+            margin: 0;
+            width: 100%;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        .welcome {
+            display: block;
+            text-align: center;
+            background: white;
+            margin: 0 auto;
+            width: 73%;
+            padding: 10px;
+            border-color: rgb(202, 200, 200);
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .material {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .code {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .develop {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .ebook {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .studyfile {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .software {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .film {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        .tip {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 73%;
+            background: white;
+            padding: 10px;
+            border-color: rgb(202, 200, 200);
+            border-width: 1px;
+            border-style: solid;
+        }
+    </style>
+    <title>学术部网盘 给你所想</title>
+    <script type="text/javascript">
+
+        function showhidediv(id) {
+            var welcome = document.getElementById("welcome");
+            var material = document.getElementById("material");
+            var code = document.getElementById("code");
+            var develop = document.getElementById("develop");
+            var ebook = document.getElementById("ebook");
+            var studyfile = document.getElementById("studyfile");
+            var softwaree = document.getElementById("software");
+            var film = document.getElementById("film");
+
+            if (id == 'welcome') {
+                welcome.style.display = "block";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'material') {
+                welcome.style.display = "none";
+                material.style.display = "block";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'code') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "block";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'develop') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "block";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'ebook') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "block";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'studyfile') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "block";
+                software.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'software') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "block";
+                film.style.display = "none";
+            }
+            if (id == 'film') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                film.style.display = "block";
+            }
+        }
+
+    </script>
+</head>
+
+<body class="body" background="background0.jpg">
+    <div class="title">
+        <div class="title-picture">
+            <img src="logo.jpg" height="80px">
+        </div>
+        <div class="line"></div>
+        <div class="title-word">
+            <h1 style="margin:auto">给你所想</h1>
+        </div>
+    </div>
+    <div>
+        <ul class="menu">
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('welcome')">欢迎</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('material')">素材模板</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('code')">编程知识体系</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('develop')">程序员成长路径</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('ebook')">电子书资源</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('studyfile')">学习资料</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('software')">常用软件</button>
+            </li>|
+            <li>
+                <button style="font-size:20px" onclick="showhidediv('film')">电影</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="background">
+        <div class="welcome" id="welcome">
+            <p>欢迎来到华中科技大学软件学院学术部资源网！
+                <br/>
+                <br/>我们致力于为广大学子提供更多优质资源，您有什么好的建议或意见可以向我们反馈，有了您的支持，我们将做得更好！
+                <br/>
+                <br/>感谢您的来访！
+                <br/>
+                <br/>我们的E-Mail：hustseacademic@outlook.com
+            </p>
+        </div>
+
+        <div class="material" id="material">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1mhXt4LE" target="_blank">http://pan.baidu.com/s/1mhXt4LE </a>&nbsp;&nbsp;密码：lvqp&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1mhXt4LE" target="_blank">AE模板</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1jHZz4lo" target="_blank">http://pan.baidu.com/s/1jHZz4lo </a>&nbsp;&nbsp;密码：7i2o&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jHZz4lo" target="_blank">PPT模板</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1skKYeg1" target="_blank">http://pan.baidu.com/s/1nvQgmkp </a>&nbsp;&nbsp;密码：toev&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nvQgmkp" target="_blank">PS素材</a>
+            </div>
+        </div>
+
+        <div class="code" id="code">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1gfgrjVX" target="_blank">http://pan.baidu.com/s/1gfgrjVX </a>&nbsp;&nbsp;密码：3t0r&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1gfgrjVX" target="_blank">Android开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1kU7DfXt" target="_blank">http://pan.baidu.com/s/1kU7DfXt </a>&nbsp;&nbsp;密码：f7ub&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1kU7DfXt" target="_blank">HTML5开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1skKYeg1" target="_blank">http://pan.baidu.com/s/1skKYeg1 </a>&nbsp;&nbsp;密码：hmt1&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1skKYeg1" target="_blank">Java语言</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1o8cFeFS" target="_blank">http://pan.baidu.com/s/1o8cFeFS </a>&nbsp;&nbsp;密码：avmp&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o8cFeFS" target="_blank">PHP开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1gfw6jvX" target="_blank">http://pan.baidu.com/s/1gfw6jvX </a>&nbsp;&nbsp;密码：x8po&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1gfw6jvX" target="_blank">Java Web开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1nvedeid" target="_blank">http://pan.baidu.com/s/1nvedeid </a>&nbsp;&nbsp;密码：dza1&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nvedeid" target="_blank">IOS开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1nu9AQeP" target="_blank">http://pan.baidu.com/s/1nu9AQeP </a>&nbsp;&nbsp;密码：m5f7&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nu9AQeP" target="_blank">C语言</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hsvOjkg" target="_blank">http://pan.baidu.com/s/1hsvOjkg </a>&nbsp;&nbsp;密码：4ums&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hsvOjkg" target="_blank">Python</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1nvigRmp" target="_blank">http://pan.baidu.com/s/1nvigRmp </a>&nbsp;&nbsp;密码：1dec&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nvigRmp" target="_blank">Unity3D开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qXU34KW" target="_blank">http://pan.baidu.com/s/1qXU34KW </a>&nbsp;&nbsp;密码：tg1b&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qXU34KW" target="_blank">C#</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1o7Q3TqU" target="_blank">http://pan.baidu.com/s/1o7Q3TqU </a>&nbsp;&nbsp;密码：bzgr&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o7Q3TqU" target="_blank">Swift语言</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1miDWYBe" target="_blank">http://pan.baidu.com/s/1miDWYBe </a>&nbsp;&nbsp;密码：160g&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1miDWYBe" target="_blank">Cocos2d-x开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSo0Jsu" target="_blank">http://pan.baidu.com/s/1eSo0Jsu </a>&nbsp;&nbsp;密码：cpwa&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSo0Jsu" target="_blank">Bootstrap</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hrKAyIo" target="_blank">http://pan.baidu.com/s/1hrKAyIo </a>&nbsp;&nbsp;密码：i09a&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrKAyIo" target="_blank">Egret</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1skIWkJN" target="_blank">http://pan.baidu.com/s/1skIWkJN </a>&nbsp;&nbsp;密码：npwo&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1skIWkJN" target="_blank">WatchKit开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1nvKG1rb" target="_blank">http://pan.baidu.com/s/1nvKG1rb </a>&nbsp;&nbsp;密码：d5vi&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nvKG1rb" target="_blank">Docker开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qY6xmjy" target="_blank">http://pan.baidu.com/s/1qY6xmjy </a>&nbsp;&nbsp;密码：e0hk&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qY6xmjy" target="_blank">GUI</a>
+            </div>
+        </div>
+
+        <div class="develop" id="develop">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1jIKgDJC" target="_blank">http://pan.baidu.com/s/1jIKgDJC </a>&nbsp;&nbsp;密码：8jgl&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jIKgDJC" target="_blank">Android开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qYeCPRI" target="_blank">http://pan.baidu.com/s/1qYeCPRI </a>&nbsp;&nbsp;密码：l47a&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qYeCPRI" target="_blank">HTML5开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qYwTUqC" target="_blank">http://pan.baidu.com/s/1skKYeg1 </a>&nbsp;&nbsp;密码：5uyq&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qYwTUqC" target="_blank">Java语言</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1skKsfRR" target="_blank">http://pan.baidu.com/s/1skKsfRR </a>&nbsp;&nbsp;密码：90gd&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1skKsfRR" target="_blank">PHP开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSgZnIM" target="_blank">http://pan.baidu.com/s/1eSgZnIM </a>&nbsp;&nbsp;密码：c7ed&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSgZnIM" target="_blank">Java Web开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hrYhEcO" target="_blank">http://pan.baidu.com/s/1hrYhEcO </a>&nbsp;&nbsp;密码：8rhw&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrYhEcO" target="_blank">IOS开发</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1dFB31mh" target="_blank">http://pan.baidu.com/s/1dFB31mh </a>&nbsp;&nbsp;密码：ji80&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1dFB31mh" target="_blank">C语言</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1jH4ryya" target="_blank">http://pan.baidu.com/s/1jH4ryya </a>&nbsp;&nbsp;密码：ht4z&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jH4ryya" target="_blank">Python</a>
+            </div>
+        </div>
+
+        <div class="ebook" id="ebook">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1gfoyCvh" target="_blank">http://pan.baidu.com/s/1gfoyCvh </a>&nbsp;&nbsp;密码：9ecu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1gfoyCvh" target="_blank">计算机编程类</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1mi3h7DY" target="_blank">http://pan.baidu.com/s/1mi3h7DY </a>&nbsp;&nbsp;密码：38pp&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1mi3h7DY" target="_blank">计算机PM类</a>
+            </div>
+<!--            <div class="tip">
+                <a href="http://pan.baidu.com/s/1cjjlq2" target="_blank">http://pan.baidu.com/s/1cjjlq2 </a>&nbsp;&nbsp;密码：zbqx&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1cjjlq2" target="_blank">文学类</a>
+            </div> -->
+        </div>
+
+        <div class="studyfile" id="studyfile">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1mhVXBao" target="_blank">http://pan.baidu.com/s/1mhVXBao </a>&nbsp;&nbsp;密码：n7u8&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1mhVXBao" target="_blank">考试资料</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1miFsNm4" target="_blank">http://pan.baidu.com/s/1miFsNm4 </a>&nbsp;&nbsp;密码：mzom&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1miFsNm4" target="_blank">学习课件</a>
+            </div>
+        </div>
+
+        <div class="software" id="software">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hrWfEaK" target="_blank">http://pan.baidu.com/s/1hrWfEaK </a>&nbsp;&nbsp;密码：c67m&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrWfEaK" target="_blank">Submit Text</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1o8p6uF4" target="_blank">http://pan.baidu.com/s/1o8p6uF4 </a>&nbsp;&nbsp;密码：8weu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o8p6uF4" target="_blank">VS2015相关</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hrC2Vli" target="_blank">http://pan.baidu.com/s/1hrC2Vli </a>&nbsp;&nbsp;密码：8av7&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrC2Vli" target="_blank">Adobe相关</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1boOOw9p" target="_blank">http://pan.baidu.com/s/1boOOw9p </a>&nbsp;&nbsp;密码：c8be&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1boOOw9p" target="_blank">PS2015CC及简单教程</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eS7x9a6" target="_blank">http://pan.baidu.com/s/1eS7x9a6 </a>&nbsp;&nbsp;密码：lhtk&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eS7x9a6" target="_blank">科学上网:自由门</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1midzjqK" target="_blank">http://pan.baidu.com/s/1midzjqK </a>&nbsp;&nbsp;密码：lte8&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1midzjqK" target="_blank">科学上网:XX-NET</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1dE1JC4p" target="_blank">http://pan.baidu.com/s/1dE1JC4p </a>&nbsp;&nbsp;密码：plwb&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1dE1JC4p" target="_blank">顶尖数据恢复软件</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eS9zyuQ" target="_blank">http://pan.baidu.com/s/1eS9zyuQ </a>&nbsp;&nbsp;密码：1wf6&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eS9zyuQ" target="_blank">Cocos2d 粒子特效工具</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1c31YCu" target="_blank">http://pan.baidu.com/s/1c31YCu </a>&nbsp;&nbsp;密码：bl95&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1c31YCu" target="_blank">tiled 地图制作</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qYWfCG8" target="_blank">http://pan.baidu.com/s/1qYWfCG8 </a>&nbsp;&nbsp;密码：idh3&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qYWfCG8" target="_blank">IDM</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1jI5n5d0" target="_blank">http://pan.baidu.com/s/1jI5n5d0 </a>&nbsp;&nbsp;密码：zfr9&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jI5n5d0" target="_blank">Notepad++</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qY5brEO" target="_blank">http://pan.baidu.com/s/1qY5brEO </a>&nbsp;&nbsp;密码：6i53&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qY5brEO" target="_blank">Everything</a>
+            </div>
+        </div>
+
+        <div class="film" id="film">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hrQGinM" target="_blank">http://pan.baidu.com/s/1hrQGinM </a>&nbsp;&nbsp;密码：gph9&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrQGinM" target="_blank">勇敢者的游戏系列</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eRMa1Z8" target="_blank">http://pan.baidu.com/s/1eRMa1Z8 </a>&nbsp;&nbsp;密码：3ogn&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eRMa1Z8" target="_blank">楚门的世界</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSivgP0" target="_blank">http://pan.baidu.com/s/1eSivgP0 </a>&nbsp;&nbsp;密码：nkx5&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSivgP0" target="_blank">国王的演讲g</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1o8Js7OY" target="_blank">http://pan.baidu.com/s/1o8Js7OY </a>&nbsp;&nbsp;密码：0bql&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o8Js7OY" target="_blank">海边的曼彻斯特</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qY5HoyK" target="_blank">http://pan.baidu.com/s/1qY5HoyK </a>&nbsp;&nbsp;密码：weyl&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qY5HoyK" target="_blank">了不起的盖茨比</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1qXEo6LY" target="_blank">http://pan.baidu.com/s/1qXEo6LY </a>&nbsp;&nbsp;密码：cby2&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1qXEo6LY" target="_blank">釜山行</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSAf2oy" target="_blank">http://pan.baidu.com/s/1eSAf2oy </a>&nbsp;&nbsp;密码：dhfe&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSAf2oy" target="_blank">血战钢锯岭</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1pLBiZ5h" target="_blank">http://pan.baidu.com/s/1pLBiZ5h </a>&nbsp;&nbsp;密码：bywg&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1pLBiZ5h" target="_blank">杀人回忆</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1geOasNp" target="_blank">http://pan.baidu.com/s/1geOasNp </a>&nbsp;&nbsp;密码：58fm&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1geOasNp" target="_blank">战马</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1kUPodBx" target="_blank">http://pan.baidu.com/s/1kUPodBx </a>&nbsp;&nbsp;密码：kvpb&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1kUPodBx" target="_blank">重返17岁</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hshBcBM" target="_blank">http://pan.baidu.com/s/1hshBcBM </a>&nbsp;&nbsp;密码：c1e6&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hshBcBM" target="_blank">剪刀手爱德华</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSCNr14" target="_blank">http://pan.baidu.com/s/1eSCNr14 </a>&nbsp;&nbsp;密码：j8wq&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSCNr14" target="_blank">辩护人</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1gfq09GJ" target="_blank">http://pan.baidu.com/s/1gfq09GJ </a>&nbsp;&nbsp;密码：2z6c&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1gfq09GJ" target="_blank">阿甘正传</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1kUPodBT" target="_blank">http://pan.baidu.com/s/1kUPodBT </a>&nbsp;&nbsp;密码：1uby&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1kUPodBT" target="_blank">大鱼</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1dEMI2Al" target="_blank">http://pan.baidu.com/s/1dEMI2Al </a>&nbsp;&nbsp;密码：g7qh&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1dEMI2Al" target="_blank">海上钢琴师</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1bSUj5k" target="_blank">http://pan.baidu.com/s/1bSUj5k </a>&nbsp;&nbsp;密码：qtfq&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1bSUj5k" target="_blank">这个杀手不太冷</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1sldUWsH" target="_blank">http://pan.baidu.com/s/1sldUWsH </a>&nbsp;&nbsp;密码：ti9q&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1sldUWsH" target="_blank">达芬奇密码</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1hsgpi2C" target="_blank">http://pan.baidu.com/s/1hsgpi2C </a>&nbsp;&nbsp;密码：otyf&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hsgpi2C" target="_blank">本杰明巴顿奇事</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1kVeNdmn" target="_blank">http://pan.baidu.com/s/1kVeNdmn </a>&nbsp;&nbsp;密码：lu1d&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1kVeNdmn" target="_blank">长城</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
