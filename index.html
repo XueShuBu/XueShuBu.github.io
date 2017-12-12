@@ -144,6 +144,13 @@
             padding: 0;
         }
 
+        .os {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+        }
+
         .film {
             display: none;
             margin: 0 auto;
@@ -173,6 +180,7 @@
             var ebook = document.getElementById("ebook");
             var studyfile = document.getElementById("studyfile");
             var softwaree = document.getElementById("software");
+            var os = document.getElementById("os");
             var film = document.getElementById("film");
 
             if (id == 'welcome') {
@@ -183,6 +191,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'material') {
@@ -193,6 +202,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'code') {
@@ -203,6 +213,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'develop') {
@@ -213,6 +224,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'ebook') {
@@ -223,6 +235,7 @@
                 ebook.style.display = "block";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'studyfile') {
@@ -233,6 +246,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "block";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "none";
             }
             if (id == 'software') {
@@ -243,6 +257,18 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "block";
+                os.style.display = "none";
+                film.style.display = "none";
+            }
+            if (id == 'os') {
+                welcome.style.display = "none";
+                material.style.display = "none";
+                code.style.display = "none";
+                develop.style.display = "none";
+                ebook.style.display = "none";
+                studyfile.style.display = "none";
+                software.style.display = "none";
+                os.style.display = "block";
                 film.style.display = "none";
             }
             if (id == 'film') {
@@ -253,6 +279,7 @@
                 ebook.style.display = "none";
                 studyfile.style.display = "none";
                 software.style.display = "none";
+                os.style.display = "none";
                 film.style.display = "block";
             }
         }
@@ -294,6 +321,9 @@
                 <button style="font-size:20px" onclick="showhidediv('software')">常用软件</button>
             </li>|
             <li>
+                <button style="font-size:20px" onclick="showhidediv('os')">系统映像</button>
+            </li>|
+            <li>
                 <button style="font-size:20px" onclick="showhidediv('film')">电影</button>
             </li>
         </ul>
@@ -314,6 +344,12 @@
         <div class="material" id="material">
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1mhXt4LE" target="_blank">http://pan.baidu.com/s/1mhXt4LE </a>&nbsp;&nbsp;密码：lvqp&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1mhXt4LE" target="_blank">AE模板</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1i4LrARz" target="_blank">http://pan.baidu.com/s/1i4LrARz </a>&nbsp;&nbsp;密码：hzyk&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1i4LrARz" target="_blank">AE插件</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1jIxjrNo" target="_blank">http://pan.baidu.com/s/1jIxjrNo </a>&nbsp;&nbsp;密码：pmt2&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jIxjrNo" target="_blank">6000 系列音效</a>
             </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1jHZz4lo" target="_blank">http://pan.baidu.com/s/1jHZz4lo </a>&nbsp;&nbsp;密码：7i2o&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1jHZz4lo" target="_blank">PPT模板</a>
@@ -430,10 +466,19 @@
 
         <div class="software" id="software">
             <div class="tip">
+                <a href="http://pan.baidu.com/s/1eSaqO98" target="_blank">http://pan.baidu.com/s/1eSaqO98 </a>&nbsp;&nbsp;密码：orhf&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eSaqO98" target="_blank">cfree v5.0 汉化破解版</a>
+            </div>
+            <div class="tip">
                 <a href="http://pan.baidu.com/s/1hrWfEaK" target="_blank">http://pan.baidu.com/s/1hrWfEaK </a>&nbsp;&nbsp;密码：c67m&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrWfEaK" target="_blank">Submit Text</a>
             </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1o8p6uF4" target="_blank">http://pan.baidu.com/s/1o8p6uF4 </a>&nbsp;&nbsp;密码：8weu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o8p6uF4" target="_blank">VS2015相关</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1kUVwZXH" target="_blank">http://pan.baidu.com/s/1kUVwZXH </a>&nbsp;&nbsp;密码：rnfw&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1kUVwZXH" target="_blank">Pixelstyle for Mac</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1ci63k6" target="_blank">http://pan.baidu.com/s/1ci63k6 </a>&nbsp;&nbsp;密码：897r&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1ci63k6" target="_blank">RPGmakerXP_V1.03</a>
             </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1hrC2Vli" target="_blank">http://pan.baidu.com/s/1hrC2Vli </a>&nbsp;&nbsp;密码：8av7&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrC2Vli" target="_blank">Adobe相关</a>
@@ -449,6 +494,9 @@
             </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1dE1JC4p" target="_blank">http://pan.baidu.com/s/1dE1JC4p </a>&nbsp;&nbsp;密码：plwb&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1dE1JC4p" target="_blank">顶尖数据恢复软件</a>
+            </div>
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1o8qV5r0" target="_blank">http://pan.baidu.com/s/1o8qV5r0 </a>&nbsp;&nbsp;密码：igh0&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1o8qV5r0" target="_blank">VMware-player-14</a>
             </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1eS9zyuQ" target="_blank">http://pan.baidu.com/s/1eS9zyuQ </a>&nbsp;&nbsp;密码：1wf6&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1eS9zyuQ" target="_blank">Cocos2d 粒子特效工具</a>
@@ -476,7 +524,16 @@
             </div>
         </div>
 
+        <div class="os" id="os">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1mhCycru" target="_blank">http://pan.baidu.com/s/1mhCycru </a>&nbsp;&nbsp;密码：tqke&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1mhCycru" target="_blank">ubuntu 16.04 x64</a>
+            </div>
+        </div>
+
         <div class="film" id="film">
+            <div class="tip">
+                <a href="http://pan.baidu.com/s/1skPfi4t" target="_blank">http://pan.baidu.com/s/1skPfi4t </a>&nbsp;&nbsp;密码：fkju&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1skPfi4t" target="_blank">歌剧魅影</a>
+            </div>
             <div class="tip">
                 <a href="http://pan.baidu.com/s/1hrQGinM" target="_blank">http://pan.baidu.com/s/1hrQGinM </a>&nbsp;&nbsp;密码：gph9&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1hrQGinM" target="_blank">勇敢者的游戏系列</a>
             </div>
